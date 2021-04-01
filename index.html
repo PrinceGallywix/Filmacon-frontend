@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewpoint", content = "width = device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Filmacon</title>
+    <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span> Filmacon</span>
+            </div>
+        <div id = "widget_header">
+            <a href = "#" title = "Main" onclick="slowScroll('#top')"> Main </a>
+            <a href = "#" title = "World famous mindblowers" onclick="slowScroll('#name1')"> World famous mindblowers </a>
+            <a href = "#" title = "Best Of Russia/USSR" onclick="slowScroll('#name2')"> Best Of Russia/USSR </a>
+            <a href = "#" title = "Best Of Asia" onclick="slowScroll('#name3')"> Best Of Asia </a>
+            <a href = "#" title = "About us" onclick="slowScroll('#about')"> About us </a>
+            <a href = "#" title = "Contacts" onclick="slowScroll('#wrapper-contacts')"> Contacts </a>
+            </div>
+            
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+            
+            $(document).on("scroll", function(){
+                if($(window).scrollTop() === 0)
+                    $("header").removeClass("fixed");
+                else
+                    $("header").attr("class", "fixed")
+                });
+        </script>
+        
+        
+        
+        <div class="widget">
+  <ul class="widget-list">
+    <li><a href="#" title = "Main" onclick="slowScroll('#top')">Main</a></li>
+    <li><a href="#" title = "World famous mindblowers" onclick="slowScroll('#name1')" >World famous mindblowers</a></li>
+    <li><a href="#" title = "Best Of Russia/USSR" onclick="slowScroll('#name2')">Best Of Russia/USSR</a></li>
+      <li><a href="#" title = "Best Of Asia" onclick="slowScroll('#name3')">Best Of Asia</a></li>
+      <li><a href="#" title = "About us" onclick="slowScroll('#about')">About us</a></li>
+    <li><a href="#" title = "Contacts" onclick="slowScroll('#wrapper-contacts')">Contacts</a></li>
+  </ul>
+</div>
+        <div id = "top">
+        <h1>Films that you deserve</h1>
+        <h3>A unique collection of very touching world masterpieces.</h3>
+        </div>
+        
+        <div id="name1"><h1>World famous mindblowers</h1></div>
+        
+<ul class="products_clearfix">
+    
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/3.webp" alt="">
+</div>     
+            <h3>Full Metal Jacket</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/7.jpg" alt="">
+            </div>
+                        <h3>Wings Of Desire</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/1.jpg" alt="">
+        </div>
+                        <h3>Mulholland Drive</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+            </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/4.jpg" alt="">
+        </div>
+                        <h3>Twin Peaks</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/4.webp" alt="">
+        </div>
+                    <h3>Barton Fink</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/5.jpg" alt="">
+        </div>
+                        <h3>Django Unchained</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/8.jpg" alt="">
+        </div>
+                        <h3>Mr. Nobody</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/9.jpg" alt="">
+        </div>
+                    <h3>Blade Runner 2049</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+</ul>        
+        
+        
+        
+        
+        
+        
+        
+        <div id="name2"><h1>Best of USSR/Russia</h1></div>
+        
+        <ul class="products_russia">
+    
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/2.jpg" alt="">
+</div>     
+            <h3>Solaris</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/11.jpg" alt="">
+            </div>
+                        <h3>Brother</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/12.jpg" alt="">
+        </div>
+                        <h3>The Practice Of Beauty</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+            </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/13.jpg" alt="">
+        </div>
+                        <h3>The Cranes Are Flying</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/14.jpg" alt="">
+        </div>
+                    <h3>Go And Watch</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/15.jpg" alt="">
+        </div>
+                        <h3>Andrei Rublev</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/16.jpg" alt="">
+        </div>
+                        <h3>Turkish Gambit</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/17.jpg" alt="">
+        </div>
+                    <h3>Dead Man's Bluff</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+</ul>        
+        
+        
+        
+        
+        
+        
+                <div id="name3"><h1>Best of Asia</h1></div>
+        
+        <ul class="products_russia">
+    
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/21.jpg" alt="">
+</div>     
+            <h3>7 Samurai</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/22.jpg" alt="">
+            </div>
+                        <h3>Princess Mononoke</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+        <div class="product-photo">         
+	<img src="images/23.jpg" alt="">
+        </div>
+                        <h3>Parasite</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+            </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/24.jpg" alt="">
+        </div>
+                        <h3>Burning</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/25.jpg" alt="">
+        </div>
+                    <h3>Ghost In The Shell</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/26.jpg" alt="">
+        </div>
+                        <h3>Oldboy</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/27.jpg" alt="">
+        </div>
+                        <h3>Memories Of Murder</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product">
+                <div class="product-photo">         
+	<img src="images/28.jpg" alt="">
+        </div>
+                    <h3>Death Note</h3>
+            <p>True Vietnam story about suffering, cringe, gooks and this sence of a disaster that grip won't let you out. Never. </p>
+            <span class="price">₽ 1999</span>
+            <span href="" class="button">В корзину</span>
+        </a>
+	</li>
+</ul>  
+        
+        
+        <div id = "about">
+        <h1>About us</h1>
+        <div class= "multi-column-text">
+        <p>В 2013 году Саша и Лёша запустили HTML Academy. Мы с самого начала решили учить работать с живым кодом, решая задачи, приближенные к реальным. Мы даём возможность получить не только знания, но и умения. В процессе обучения мы сталкиваем ученика с испытаниями, принцип которых — «сверстай, как показано в образце». Именно по такому принципу работают большинство верстальщиков.</p>
+        
+        <p>В 2013 году Саша и Лёша запустили HTML Academy. Мы с самого начала решили учить работать с живым кодом, решая задачи, приближенные к реальным. Мы даём возможность получить не только знания, но и умения. В процессе обучения мы сталкиваем ученика с испытаниями, принцип которых — «сверстай, как показано в образце». Именно по такому принципу работают большинство верстальщиков.</p>
+            
+            
+        </div>
+            
+            </div>
+        
+        
+<div id="wrapper-contacts">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":646,"zoom":17,"queryString":"площадь Гагарина, 1, Ростов-на-Дону, Россия","place_id":"ChIJgx8eeay540ARXet_ub6fFas","satellite":false,"centerCoord":[47.23729351717157,39.712309349999984],"cid":"0xab159fbeb97feb5d","lang":"en","cityUrl":"/russia/rostov-on-don-33273","cityAnchorText":"Карта [CITY1], Southern Federal District, Россия","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"439843"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=439843';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/ru/map-embed">Filmacon</a>
+        
+        <div class="col-contacts">
+            <h2>Contacts:</h2>
+            <p>344000, Russia, Rostov-on-Don</p>
+            <p>Gagarin sq., 1 </p>
+            <p><strong>T.:</strong> +7 951 840-15-81</p>
+            <p><strong>Working hours:</strong> 11:00-19:00</p>
+        </div>
+        
+        </div>
+        
+        <div class="footer"> <p>© 2021, Filmacon, Dmitry Borisov </p></div>
+    </body>
